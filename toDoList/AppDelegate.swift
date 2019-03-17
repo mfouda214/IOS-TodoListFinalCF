@@ -9,6 +9,7 @@
 import UIKit
 import GoogleMobileAds
 import Parse
+import Instabug
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

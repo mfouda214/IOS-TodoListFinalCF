@@ -10,4 +10,5 @@ pod 'FSCalendar'
 pod 'Google-Mobile-Ads-SDK'
 pod 'Parse'
 pod 'SVProgressHUD'
+pod 'Instabug'
 end
