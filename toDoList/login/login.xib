@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-UI-Text-Medium.otf">
+            <string>SFUIText-Medium</string>
+        </array>
+        <array key="SF-UI-Text-Regular.otf">
+            <string>SFUIText-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="login" customModule="toDoList" customModuleProvider="target">
+            <connections>
+                <outlet property="emailCase" destination="lRf-A4-irw" id="aK7-ce-SuT"/>
+                <outlet property="forgotButton" destination="H2W-rE-qmm" id="0ur-Lm-MB5"/>
+                <outlet property="loginButton" destination="nzC-wg-Bdd" id="3Y5-aX-7ms"/>
+                <outlet property="passwordCase" destination="iRl-wo-PsC" id="YFf-s9-ZKm"/>
+                <outlet property="signupButton" destination="dov-SM-HE1" id="62E-TB-hFO"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lRf-A4-irw">
+                    <rect key="frame" x="16" y="39" width="288" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" name="SFUIText-Medium" family="SF UI Text" pointSize="17"/>
+                    <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iRl-wo-PsC">
+                    <rect key="frame" x="16" y="77" width="288" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" name="SFUIText-Medium" family="SF UI Text" pointSize="17"/>
+                    <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nzC-wg-Bdd">
+                    <rect key="frame" x="16" y="115" width="288" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="Lyz-eZ-xdL"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="SFUIText-Medium" family="SF UI Text" pointSize="17"/>
+                    <state key="normal" title="Login"/>
+                    <connections>
+                        <action selector="loginAction:" destination="-1" eventType="touchUpInside" id="KhT-0s-Kmv"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dov-SM-HE1">
+                    <rect key="frame" x="0.0" y="430" width="320" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="kqR-74-62s"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="SFUIText-Medium" family="SF UI Text" pointSize="17"/>
+                    <state key="normal" title="Sign Up"/>
+                    <connections>
+                        <action selector="registerAction:" destination="-1" eventType="touchUpInside" id="QDC-RA-Z1f"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H2W-rE-qmm">
+                    <rect key="frame" x="16" y="173" width="288" height="27"/>
+                    <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="12"/>
+                    <state key="normal" title="Forgot Password?"/>
+                    <connections>
+                        <action selector="forgotPassword:" destination="-1" eventType="touchUpInside" id="gIF-7K-Wog"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="dov-SM-HE1" secondAttribute="bottom" id="0BR-mF-Jlr"/>
+                <constraint firstItem="H2W-rE-qmm" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="C4v-PV-JXq"/>
+                <constraint firstItem="nzC-wg-Bdd" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="CdP-w8-ATu"/>
+                <constraint firstAttribute="trailing" secondItem="lRf-A4-irw" secondAttribute="trailing" constant="16" id="GbI-iP-pxS"/>
+                <constraint firstAttribute="trailing" secondItem="nzC-wg-Bdd" secondAttribute="trailing" constant="16" id="HHg-9j-zgR"/>
+                <constraint firstAttribute="trailing" secondItem="H2W-rE-qmm" secondAttribute="trailing" constant="16" id="Ssv-hO-FG2"/>
+                <constraint firstAttribute="trailing" secondItem="iRl-wo-PsC" secondAttribute="trailing" constant="16" id="TPn-m3-jms"/>
+                <constraint firstItem="iRl-wo-PsC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="YbY-VQ-rS8"/>
+                <constraint firstAttribute="trailing" secondItem="dov-SM-HE1" secondAttribute="trailing" id="Yfb-wa-hYk"/>
+                <constraint firstItem="H2W-rE-qmm" firstAttribute="top" secondItem="nzC-wg-Bdd" secondAttribute="bottom" constant="8" id="cIg-R2-a4X"/>
+                <constraint firstItem="dov-SM-HE1" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="i47-ET-OPs"/>
+                <constraint firstItem="lRf-A4-irw" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="39" id="iCU-Cs-AaE"/>
+                <constraint firstItem="nzC-wg-Bdd" firstAttribute="top" secondItem="iRl-wo-PsC" secondAttribute="bottom" constant="8" id="ifH-4X-NA2"/>
+                <constraint firstItem="lRf-A4-irw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="irk-QD-txI"/>
+                <constraint firstItem="iRl-wo-PsC" firstAttribute="top" secondItem="lRf-A4-irw" secondAttribute="bottom" constant="8" id="vMw-dB-EbX"/>
+            </constraints>
+            <point key="canvasLocation" x="24" y="52"/>
+        </view>
+    </objects>
+</document>
